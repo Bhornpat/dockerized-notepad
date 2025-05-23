@@ -1,0 +1,18 @@
+# docker-compose.yml
+services:
+  backend:
+    image: bhornpat/dockerized-notepad-backend:latest
+    container_name: notepad-backend
+    ports:
+      - "8000:8000"
+    restart: always
+
+  frontend:
+    image: bhornpat/dockerized-notepad-frontend:latest
+    container_name: notepad-frontend
+    ports:
+      - "8081:80"
+    restart: always
+    depends_on:
+      - backend
+

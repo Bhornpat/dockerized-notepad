@@ -8,6 +8,7 @@ async-timeout==4.0.2
 attrs==23.1.0
 certifi==2023.5.7
 charset-normalizer==3.1.0
+click==8.2.1
 contourpy==1.0.7
 cycler==0.11.0
 exceptiongroup==1.1.1
@@ -50,5 +51,6 @@ trio-websocket==0.10.3
 typing-inspection==0.4.1
 typing_extensions==4.13.2
 urllib3==2.0.3
+uvicorn==0.34.2
 wsproto==1.2.0
 yarl==1.9.2
