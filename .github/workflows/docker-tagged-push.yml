@@ -37,5 +37,5 @@ jobs:
       run: |
         docker build -t bhornpat/dockerized-notepad-frontend:latest -t bhornpat/dockerized-notepad-frontend:${{ steps.get_version.outputs.version }} ./frontend
         docker push bhornpat/dockerized-notepad-frontend:latest
-        docker push bhornpat/dockerized-notepad-frontend:${{ steps.get_version.outputs.version }}
-
+        docker push bhornpat/dockerized-notepad-frontend:${{ steps.get_version.outputs.version }}  
+        
