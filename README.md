@@ -29,7 +29,6 @@ docker compose up --build
  Backend  | [bhornpat/dockerized-notepad-backend] 
  Frontend | [bhornpat/dockerized-notepad-frontend]
 
-
 ---
 
 ## CI/CD: Versioned Build with Git Tags
