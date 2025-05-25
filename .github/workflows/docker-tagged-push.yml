@@ -19,17 +19,17 @@ jobs:
     - name: 🔍 DEBUG: Check if secrets exist
       run: |
         if [ -z "${{ secrets.DOCKERHUB_USERNAME }}" ]; then
-          echo "❌ DOCKERHUB_USERNAME is missing!"
+          echo " DOCKERHUB_USERNAME is missing!"
           exit 1
         else
-          echo "✅ DOCKERHUB_USERNAME exists."
+          echo " DOCKERHUB_USERNAME exists."
         fi
 
         if [ -z "${{ secrets.DOCKERHUB_TOKEN }}" ]; then
-          echo "❌ DOCKERHUB_TOKEN is missing!"
+          echo " DOCKERHUB_TOKEN is missing!"
           exit 1
         else
-          echo "✅ DOCKERHUB_TOKEN exists."
+          echo " DOCKERHUB_TOKEN exists."
         fi
 
     - name: Log in to Docker Hub
